@@ -1,0 +1,8 @@
+.gallery-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.gallery-img {
+    height: 200px;
+}
