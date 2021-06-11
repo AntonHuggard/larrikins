@@ -13,19 +13,30 @@ permalink: /art
 
 <h1>GALLERY</h1>
 
+<script>
+    function showImg() {
+        document.getElementById('darkness').classList.remove('unsichtbar');
+        document.getElementById('darkness').classList.add('sichtbar');
+    }
+    function hideImg() {
+        document.getElementById('darkness').classList.add('unsichtbar');
+        document.getElementById('darkness').classList.remove('sichtbar');
+    }
+</script>
+
 <div class='gallery-container'>
-    <img class='gallery-img' src='../art/48_Adventurer-Golden-Wood.png'>
-    <img class='gallery-img' src='../art/47_Adventurer-Crow.png'>
-    <img class='gallery-img' src='../art/46_Adventurer-Misy Forest.png'>
-    <img class='gallery-img' src='/art/45_Adventurer-Beach.png'>
-    <img class='gallery-img' src='/art/42_Adventurer-Night.png'>
-    <img class='gallery-img' src='/art/merry-jester.png'>
+    <img class='gallery-img' onclick='showImg()' src='../art/48_Adventurer-Golden-Wood.png'>
+    <img class='gallery-img' onclick='showImg()' src='../art/47_Adventurer-Crow.png'>
+    <img class='gallery-img' onclick='showImg()' src='../art/46_Adventurer-Misy Forest.png'>
+    <img class='gallery-img' onclick='showImg()' src='/art/45_Adventurer-Beach.png'>
+    <img class='gallery-img' onclick='showImg()' src='/art/42_Adventurer-Night.png'>
+    <img class='gallery-img' onclick='showImg()' src='/art/merry-jester.png'>
 </div>
 
-<!-- <div id='darkness'>
+<div id='darkness' class='unsichtbar'>
     <div id='modal-container'>
-        <button id='close-btn'>&bnsp</button>
-        <img id='modal-img' />
-        <p id='modal-text'></p>
+        <button id='close-btn' onclick='hideImg()'>&times</button>
+        <img id='modal-img' src='../art/47_Adventurer-Crow.png'/>
+        <p id='modal-text'>The Adventurer and the Crow</p>
     </div>
-</div> -->
+</div>
