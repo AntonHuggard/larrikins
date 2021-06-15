@@ -16,6 +16,14 @@ permalink: /art
 <script>
     function showImg(n) {
         switch (n) {
+            case 8:
+                document.getElementById('modal-img').src='../art/Plague-Doctor.png';
+                document.getElementById('modal-text').innerText = 'Plague Doctor';
+                break;
+            case 7:
+                document.getElementById('modal-img').src='../art/Blackbeard.png';
+                document.getElementById('modal-text').innerText = 'Blackbeard';
+                break;
             case 6:
                 document.getElementById('modal-img').src='../art/48_Adventurer-Golden-Wood.png';
                 document.getElementById('modal-text').innerText = 'Adventurer in the Golden Wood';
@@ -57,6 +65,8 @@ permalink: /art
     <img class='gallery-img' onclick='showImg(3)' src='/art/45_Adventurer-Beach.png'>
     <img class='gallery-img' onclick='showImg(2)' src='/art/42_Adventurer-Night.png'>
     <img class='gallery-img' onclick='showImg(1)' src='/art/merry-jester.png'>
+    <img class='gallery-img' onclick='showImg(7)' src='/art/Blackbeard.png'>
+    <img class='gallery-img' onclick='showImg(8)' src='/art/Plague-Doctor.png'>
 </div>
 
 <div id='darkness' class='unsichtbar'>
