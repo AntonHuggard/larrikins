@@ -16,6 +16,18 @@ permalink: /art
 <script>
     function showImg(n) {
         switch (n) {
+            case 11:
+                document.getElementById('modal-img').src='../art/49_Adventurer-Holy-Chicken.png';
+                document.getElementById('modal-text').innerText = 'The Adventurer and the Holy Chicken';
+                break;
+            case 10:
+                document.getElementById('modal-img').src='../art/Fire-Wizard.png';
+                document.getElementById('modal-text').innerText = 'Wizard & the Bonfire';
+                break;
+            case 9:
+                document.getElementById('modal-img').src='../art/Prospector.png';
+                document.getElementById('modal-text').innerText = 'Prospector';
+                break;
             case 8:
                 document.getElementById('modal-img').src='../art/Plague-Doctor.png';
                 document.getElementById('modal-text').innerText = 'Plague Doctor';
@@ -59,6 +71,7 @@ permalink: /art
 </script>
 
 <div class='gallery-container'>
+    <img class='gallery-img' onclick='showImg(11)' src='../art/49_Adventurer-Holy-Chicken.png'>
     <img class='gallery-img' onclick='showImg(6)' src='../art/48_Adventurer-Golden-Wood.png'>
     <img class='gallery-img' onclick='showImg(5)' src='../art/47_Adventurer-Crow.png'>
     <img class='gallery-img' onclick='showImg(4)' src='../art/46_Adventurer-Misy Forest.png'>
@@ -67,6 +80,8 @@ permalink: /art
     <img class='gallery-img' onclick='showImg(1)' src='/art/merry-jester.png'>
     <img class='gallery-img' onclick='showImg(7)' src='/art/Blackbeard.png'>
     <img class='gallery-img' onclick='showImg(8)' src='/art/Plague-Doctor.png'>
+    <img class='gallery-img' onclick='showImg(9)' src='/art/Prospector.png'>
+    <img class='gallery-img' onclick='showImg(10)' src='/art/Fire-Wizard.png'>
 </div>
 
 <div id='darkness' class='unsichtbar'>
