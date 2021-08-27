@@ -16,6 +16,10 @@ permalink: /art
 <script>
     function showImg(n) {
         switch (n) {
+            case 12:
+                document.getElementById('modal-img').src='../art/21.2.Australian_wizard.png';
+                document.getElementById('modal-text').innerText = 'Australian wizard';
+                break;
             case 11:
                 document.getElementById('modal-img').src='../art/49_Adventurer-Holy-Chicken.png';
                 document.getElementById('modal-text').innerText = 'The Adventurer and the Holy Chicken';
@@ -71,6 +75,7 @@ permalink: /art
 </script>
 
 <div class='gallery-container'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(12)' src='../art/21.2.Australian_wizard.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(11)' src='../art/49_Adventurer-Holy-Chicken.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(6)' src='../art/48_Adventurer-Golden-Wood.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(5)' src='../art/47_Adventurer-Crow.png'>
