@@ -15,7 +15,8 @@
 .gallery-img:hover {
     cursor: pointer;
     transition-duration: 0.5s;
-    box-shadow: 1px 10px 10px rgb(102, 102, 102);
+    box-shadow: 1px 1px 5px rgb(102, 102, 102);
+    transform: translate(0px, -10px);
 }
 
 .unsichtbar {
