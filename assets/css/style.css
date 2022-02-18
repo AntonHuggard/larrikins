@@ -101,27 +101,46 @@ h1, h2, h4, footer {text-align: center;}
     transform: translateY(4px);
 }
 #gallery_btn {
-    padding: 10px 25px;
-    background-color: rgb(255, 136, 0);
-    /* cursor: not-allowed; */
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    max-width: 350px;
 }
 #gallery_btn:hover {
     cursor: pointer;
-    background-color: rgb(202, 108, 1);
-    transition-duration: 0.5s;
+    animation: shake 0.25s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 10px white;
 }
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+  }
+#gallery_btn > img {
+    padding-top: 25px;
+    display: block;
+    margin: auto;
+}
+#gallery_btn > h3 { text-align: center; color: black; }
 #elemtry_btn {
+    display: block;
+    margin: auto;
     width: 100px;
     background-color: rgb(39, 147, 248);
     padding: 10px;
     border-radius: 50%;
     border: 10px solid rgb(33, 126, 212);
     cursor: pointer;
+    margin-top: 50px;
 }
 #elemtry_btn:hover {
     transform: rotate(360deg);
     transition-duration: 1.5s;
 }
+.padding-btm {padding-bottom: 50px;}
 .hrscp_btn {
     display: block;
     margin: auto;

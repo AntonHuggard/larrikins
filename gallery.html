@@ -23,6 +23,10 @@ permalink: /art
 <script>
     function showImg(n) {
         switch (n) {
+            case 14:
+                document.getElementById('modal-img').src='../art/52_Adventurer_waiting.png';
+                document.getElementById('modal-text').innerText = 'Adventurer waits under a tree';
+                break;
             case 13:
                 document.getElementById('modal-img').src='../art/50_Adventurer_Tartary.png';
                 document.getElementById('modal-text').innerText = 'Adventurer and the weird plant';
@@ -86,6 +90,7 @@ permalink: /art
 </script>
 
 <div class='gallery-container'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(14)' src='../art/52_Adventurer_waiting.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(13)' src='../art/50_Adventurer_Tartary.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(12)' src='../art/21.2.Australian_wizard.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(11)' src='../art/49_Adventurer-Holy-Chicken.png'>
