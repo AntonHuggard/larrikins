@@ -1,22 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>larrikins</title>
-</head>
-<body>
-  <h1>test index page</h1>
-</body>
-</html>
-
-<!-- ---
-layout: comic
-title:  "Larrikins"
+---
+layout: base
+categories: jekyll update
 permalink: /index
 ---
 
+<div id = "desktop_header">
+    <img src = "../assets/img/bannr_dsktp_W.png">
+    <div class="top_menu">
+        <a class="selected" href="../index"><strong>COMICS</strong></a>
+        <a id = 'arc' href="../archive"><strong>ARCHIVE</strong></a>
+        <a id = 'abt' href="../about"><strong>ABOUT</strong></a>
+        <a id = 'oth' href="../other"><strong>OTHER</strong></a>
+        <a id = 'con' href="../contact"><strong>CONTACT</strong></a>
+    </div>
+</div>
+    
 {% for post in site.posts limit:1 %}
-  {{ post }}
-{% endfor %} -->
+  <article>
+    {{ post.content }}
+  </article>
+{% endfor %}
+
+
+<div id='nav'>
+  <div id = "mobile_navigation">
+      <img src="assets/img/arr-3.png" onclick='goto_page("/1/")'>
+      <img src="assets/img/arr.png" onclick='goto_page("/{{ page.previous.permalink }}")'>
+      <img src="assets/img/dice.png" onclick="random()">
+      <img src="assets/img/arr.png" class="flip" onclick='goto_page("/{{ page.next.permalink }}")'>
+      <img src="assets/img/arr-3.png" class="flip" onclick='goto_page("../index")'>
+  </div>
+
+  <div id = "desktop_navigation">
+      <a href="../1"><strong>OLDEST</strong></a>
+      <a href="../41"><strong>PREV</strong> </a>
+      <a href="#" onclick="random()"><strong>RANDOM COMIC</strong></a>
+      <a ><strong>NEXT</strong></a>
+      <a href="../index"><strong>NEWEST</strong></a>
+  </div>
+</div>
