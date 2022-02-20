@@ -125,6 +125,17 @@ h1, h2, h4, footer {text-align: center;}
     margin: auto;
 }
 #gallery_btn > h3 { text-align: center; color: black; }
+.sketchbook-link {
+    width: 80%;
+    max-width: 300px;
+    transition: 0.5s;
+}
+.sketchbook-link:hover {
+    width: 90%;
+    max-width: 330px;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 #elemtry_btn {
     display: block;
     margin: auto;
@@ -141,6 +152,7 @@ h1, h2, h4, footer {text-align: center;}
     transition-duration: 1.5s;
 }
 .padding-btm {padding-bottom: 50px;}
+.margin-top {margin-top: 50px;}
 .hrscp_btn {
     display: block;
     margin: auto;
