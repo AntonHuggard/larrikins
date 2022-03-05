@@ -21,62 +21,56 @@ permalink: /art
 <h1>GALLERY</h1>
 
 <script>
-    function showImg(n) {
+    function showImg(img_element, n) {
+        const img_path = img_element.src;
+        document.getElementById('modal-img').src = img_path;
         switch (n) {
+            case 16:
+                document.getElementById('modal-text').innerText = 'The Adventurer and the Shark';
+                break;
+            case 15:
+                document.getElementById('modal-text').innerText = 'The Wizard';
+                break;
             case 14:
-                document.getElementById('modal-img').src='../art/52_Adventurer_waiting.png';
                 document.getElementById('modal-text').innerText = 'Adventurer waits under a tree';
                 break;
             case 13:
-                document.getElementById('modal-img').src='../art/50_Adventurer_Tartary.png';
                 document.getElementById('modal-text').innerText = 'Adventurer and the weird plant';
                 break;
             case 12:
-                document.getElementById('modal-img').src='../art/21.2.Australian_wizard.png';
                 document.getElementById('modal-text').innerText = 'Australian wizard';
                 break;
             case 11:
-                document.getElementById('modal-img').src='../art/49_Adventurer-Holy-Chicken.png';
                 document.getElementById('modal-text').innerText = 'The Adventurer and the Holy Chicken';
                 break;
             case 10:
-                document.getElementById('modal-img').src='../art/Fire-Wizard.png';
                 document.getElementById('modal-text').innerText = 'Wizard & the Bonfire';
                 break;
             case 9:
-                document.getElementById('modal-img').src='../art/Prospector.png';
                 document.getElementById('modal-text').innerText = 'Prospector';
                 break;
             case 8:
-                document.getElementById('modal-img').src='../art/Plague-Doctor.png';
                 document.getElementById('modal-text').innerText = 'Plague Doctor';
                 break;
             case 7:
-                document.getElementById('modal-img').src='../art/Blackbeard.png';
                 document.getElementById('modal-text').innerText = 'Blackbeard';
                 break;
             case 6:
-                document.getElementById('modal-img').src='../art/48_Adventurer-Golden-Wood.png';
                 document.getElementById('modal-text').innerText = 'Adventurer in the Golden Wood';
                 break;
             case 5:
-                document.getElementById('modal-img').src='../art/47_Adventurer-Crow.png';
                 document.getElementById('modal-text').innerText = 'The Adventurer and the Crow';
                 break;
             case 4:
-                document.getElementById('modal-img').src='../art/46_Adventurer-Misy Forest.png';
                 document.getElementById('modal-text').innerText = 'The Adventurer and the Misty Forest';
                 break;
             case 3:
-                document.getElementById('modal-img').src='/art/45_Adventurer-Beach.png';
                 document.getElementById('modal-text').innerText = 'The Adventurer and the Beach';
                 break;
             case 2:
-                document.getElementById('modal-img').src='/art/42_Adventurer-Night.png';
                 document.getElementById('modal-text').innerText = 'The Adventurer and the Night';
                 break;
             case 1:
-                document.getElementById('modal-img').src='/art/merry-jester.png';
                 document.getElementById('modal-text').innerText = 'Merry Jester';
                 break;
         }
@@ -90,20 +84,22 @@ permalink: /art
 </script>
 
 <div class='gallery-container'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(14)' src='../art/52_Adventurer_waiting.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(13)' src='../art/50_Adventurer_Tartary.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(12)' src='../art/21.2.Australian_wizard.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(11)' src='../art/49_Adventurer-Holy-Chicken.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(6)' src='../art/48_Adventurer-Golden-Wood.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(5)' src='../art/47_Adventurer-Crow.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(4)' src='../art/46_Adventurer-Misy Forest.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(3)' src='/art/45_Adventurer-Beach.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(2)' src='/art/42_Adventurer-Night.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(1)' src='/art/merry-jester.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(7)' src='/art/Blackbeard.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(8)' src='/art/Plague-Doctor.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(9)' src='/art/Prospector.png'>
-    <img class='gallery-img' loading="lazy" onclick='showImg(10)' src='/art/Fire-Wizard.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 15)' src='../art/Wizard.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 14)' src='../art/52_Adventurer_waiting.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 13)' src='../art/50_Adventurer_Tartary.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 12)' src='../art/21.2.Australian_wizard.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 11)' src='../art/49_Adventurer-Holy-Chicken.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 6)' src='../art/48_Adventurer-Golden-Wood.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 5)' src='../art/47_Adventurer-Crow.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 4)' src='../art/46_Adventurer-Misy Forest.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 3)' src='/art/45_Adventurer-Beach.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 16)' src='/art/43_Adventurer-Shark.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 2)' src='/art/42_Adventurer-Night.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 1)' src='/art/merry-jester.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 7)' src='/art/Blackbeard.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 8)' src='/art/Plague-Doctor.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 9)' src='/art/Prospector.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 10)' src='/art/Fire-Wizard.png'>
 </div>
 
 <div id='darkness' class='unsichtbar'>
