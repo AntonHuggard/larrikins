@@ -44,7 +44,7 @@ h1, h2, h4, footer {text-align: center;}
 .text_body > h2 {padding-top: 20px;}
 .archive_format {text-align: center;}
 .archive_format > a {color:greenyellow; text-decoration: none; padding-bottom: 10px; display: block;}
-.text_format {padding: 20px; text-align: center;}
+.text_format {padding: 20px; text-align: center; }
 .text_format > a, .horoscope_format > p > a {color: greenyellow; text-decoration: none; }
 .centre {display: block; margin: auto; width: 90%; max-width: 700px;}
 
@@ -100,6 +100,10 @@ h1, h2, h4, footer {text-align: center;}
     box-shadow: 0 5px rgb(9, 170, 0);
     transform: translateY(4px);
 }
+#links_btn {
+    background-color: orange;
+    cursor: pointer;
+}
 #gallery_btn {
     display: grid;
     grid-template-columns: 1fr;
@@ -129,6 +133,7 @@ h1, h2, h4, footer {text-align: center;}
     width: 80%;
     max-width: 300px;
     transition: 0.25s;
+    padding-bottom: 30px;
 }
 .sketchbook-link:hover {
     width: 90%;
@@ -146,6 +151,7 @@ h1, h2, h4, footer {text-align: center;}
     border: 10px solid rgb(33, 126, 212);
     cursor: pointer;
     margin-top: 50px;
+    transition-duration: 2s;
 }
 #elemtry_btn:hover {
     transform: rotate(360deg);
