@@ -1,15 +1,47 @@
-body { margin: 0px; font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-header {background-color: black;}
-h1, h2, h4, footer {text-align: center;}
-#comic {display: block; margin: auto; max-width: 100%;}
-.mobile_top_menu.hidden, #desktop_header, #desktop_navigation {display: none;}
+body { 
+    margin: 0px; 
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+h1, h2, h4, footer {
+    text-align: center;
+}
+
+#comic {
+    display: block; 
+    margin: auto; 
+    max-width: 100%;
+}
+#desktop_header, #desktop_navigation {
+    display: none;
+}
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* width: 80%; */
-  }
+}
+
+.mobile_top_menu {
+    z-index: 0;
+    padding-top: 80px;
+    margin-bottom: 50px;
+    transition: 1s;
+}
+.mobile_top_menu.hidden {
+    margin-top: -275px;
+    margin-bottom: 100px;
+}
 #mobile_header {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background-color: black;
     display: grid;
     grid-template-columns: 15% 85%;
     padding: 5px 0px;
@@ -48,7 +80,10 @@ h1, h2, h4, footer {text-align: center;}
 .text_format > a, .horoscope_format > p > a {color: greenyellow; text-decoration: none; }
 .centre {display: block; margin: auto; width: 90%; max-width: 700px;}
 
-#mobile_navigation {display: grid;grid-template-columns: repeat(5, 1fr);}
+#mobile_navigation {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
 #mobile_navigation > img { 
     display: block; 
     margin: auto;
