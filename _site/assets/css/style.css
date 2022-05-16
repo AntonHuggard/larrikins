@@ -289,13 +289,23 @@ input:checked + .slider:before {
 #covid_div > #covid_text > p, #covid_div > #covid_text > a {text-align: center;}
 
 @media only screen and (min-width: 730px) {
-    #mobile_header, #mobile_top_menu, #mobile_navigation {display: none;}
+    
+    #mobile_header, .mobile_top_menu, #mobile_navigation  {
+        display: none;
+    }
+
     #desktop_header {
         display: block; 
         background-color: black;
     }
-    #comic {width: 100%; max-width: 800px;}
+
+    #comic {
+        width: 100%; 
+        max-width: 800px;
+    }
+    
     #desktop_header > img {display: block; margin: 0px auto; padding: 20px 0px;}
+    
     .top_menu {
         width: 100%;
         background-color: white;
