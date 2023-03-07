@@ -47,6 +47,15 @@
         const img_path = img_element.src;
         document.getElementById('modal-img').src = img_path;
         switch (n) {
+            // case 16:
+            //     document.getElementById('modal-text').innerText = 'The Adventurer and the Shark';
+            //     break;
+            case 18:
+                document.getElementById('modal-text').innerText = 'Peacock';
+                break;
+            case 17:
+                document.getElementById('modal-text').innerText = 'A Decade of Adventuring';
+                break;
             case 16:
                 document.getElementById('modal-text').innerText = 'The Adventurer and the Shark';
                 break;
@@ -106,6 +115,8 @@
 </script>
 
 <div class='gallery-container'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 18)' src='../art/Peacock.png'>
+    <img class='gallery-img' loading="lazy" onclick='showImg(this, 17)' src='../art/53_Adventurer_decade.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(this, 15)' src='../art/Wizard.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(this, 14)' src='../art/52_Adventurer_waiting.png'>
     <img class='gallery-img' loading="lazy" onclick='showImg(this, 13)' src='../art/50_Adventurer_Tartary.png'>
