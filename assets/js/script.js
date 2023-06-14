@@ -22,7 +22,7 @@ function colourChange() {
 }
 
 function random() {
-    let num = Math.floor((Math.random() * 70) + 1);
+    let num = Math.floor((Math.random() * 75) + 1);
     window.location='../'+num;
 }
 
