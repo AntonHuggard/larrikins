@@ -7,7 +7,7 @@ header {
     background-color: black;
 }
 
-h1, h2, h4, footer {
+h1, h2, h4, footer, .centre-text {
     text-align: center;
 }
 
